@@ -7,7 +7,7 @@ const { connectTunnel } = require("./connectDB");
 
 connectTunnel();
 app.use(bodyParser.json());
-app.use(express.static("dist"));
+app.use(express.static("dist/client"));
 app.post("/api", async (req, res) => {
     data = req.body;
     await CellData.create({
@@ -42,7 +42,7 @@ app.get("/deleteApi", async (req, res) => {
     res.json({ status: "ok", data: allData });
 });
 app.use("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "/../dist", "index.html"));
+    res.sendFile(path.join(__dirname, "../dist/client", "index.html"));
 });
 
 app.listen(3000, () => console.log("Listening on port 3000!"));
