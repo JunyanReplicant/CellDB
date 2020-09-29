@@ -3,6 +3,23 @@ node_modules
 dist
 /util/config.json
 /util/userInfoSchema.js.bak
-./server/mongoDB.pem
-./server/rds-combined-ca-bundle.pem
+.DS_Store
+.idea/
+*.iml
+*.pem
+*.zip
 .prettierrc
+.env
+*.log
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+# Thumbnails
+._*
+# Optional npm cache directory
+.npm
