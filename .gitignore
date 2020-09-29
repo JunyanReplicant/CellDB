@@ -1,0 +1,8 @@
+node_modules
+.cache
+dist
+/util/config.json
+/util/userInfoSchema.js.bak
+./server/mongoDB.pem
+./server/rds-combined-ca-bundle.pem
+.prettierrc
